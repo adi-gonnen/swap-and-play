@@ -1,0 +1,99 @@
+/*----------  Containers  ----------*/
+
+
+
+// @media (max-width: #{$container-width - 10}) {
+//   .container,
+//   .inner-container {
+//     max-width: 98%;
+//   }
+// }
+
+
+/*----------  Flex Helpers  ----------*/
+body {
+	font-family: "Ubuntu";
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+
+.space-around {
+  justify-content: space-around;
+}
+
+.align-item {
+  align-self: center;
+}
+
+li {
+	list-style: none;
+}
+
+.flex-start{
+	justify-content: flex-start;
+}
+
+
+/* Breakpoint mixins */
+
+// @mixin for-mobile-only {
+//   @media (max-width: $mobile-breakpoint) {
+//     @content;
+//   }
+// }
+
+.masonry {
+	margin: 0 auto 2em;
+	column-gap: 1em;
+}
+
+@media only screen and (min-width: 1400px) {
+	.masonry {
+		column-count: 5;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+	.masonry {
+		column-count: 4;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.masonry {
+		column-count: 3;
+	}
+}
+
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+	.masonry {
+		column-count: 2;
+	}
+}

@@ -1,0 +1,113 @@
+
+// @import 'vendor';
+@import 'functions';
+@import 'helpers';
+@import 'typography';
+@import 'vars';
+@import 'layout';
+@import 'match';
+@import 'user';
+
+
+
+/* Components */
+* {
+  box-sizing:border-box;
+}
+
+   
+html {
+    font-size: 16px;
+    background-color: white;
+    height: 100%;
+  }
+
+body {
+    //To change:
+  // background: white;
+//   font-family:helvetica neue, helvetica, arial, sans-serif;
+  margin: 0;
+  font-weight:200;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// .header-container {
+//   padding-bottom: 60px;
+// }
+
+// ADD LATER. check if not ruined the design. 
+p, h1,h2, h3, h4, h5, h6, li, body{
+  margin: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+.paper {
+  background-size: 100% 36px;
+  box-shadow:3px 3px 3px rgba(0,0,0,.2),0px 0px 6px rgba(0,0,0,.2);
+}
+
+.masonry {
+	margin: 0 auto 2em;
+	column-gap: 1.5em;
+}
+
+.game-preview .el-card__body {
+  height: 100%;
+}
+
+@media only screen and (min-width: 1400px) {
+	.masonry {
+		column-count: 5;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+	.masonry {
+		column-count: 4;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.masonry {
+		column-count: 3;
+	}
+}
+
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+	.masonry {
+		column-count: 2;
+	}
+}
+
+
+// .todos {
+//   input[type="checkbox"] {
+//       display:none;
+//   }
+//   input[type="checkbox"] + label span {
+//       display:inline-block;
+//       width:19px;
+//       height:19px;
+//       margin:-2px 20px 0 0;
+//       vertical-align:middle;
+//       background:url(../assets/check_radio_sheet.png) left top no-repeat;
+//       cursor:pointer;
+//   }
+//   input[type="checkbox"]:checked + label span {
+//       background:url(../assets/check_radio_sheet.png) -19px top no-repeat;
+//   }  
+
+
+// }

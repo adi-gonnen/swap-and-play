@@ -1,0 +1,111 @@
+
+.clean-list {
+  list-style: none;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+.no-margin{
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+
+.show {
+  display: block;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.p5 {
+  padding: 5px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+.content-center{
+  justify-content: center;
+}
+
+.space-evenly{
+  justify-content: space-evenly;
+}
+
+// Layoutout Helpers
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+//Animation fade
+.slowDisplay-enter-active, .slowDisplay-leave-active {
+  transition: opacity .6s;
+}
+.slowDisplay-enter, .slowDisplay-leave-to{
+  opacity: 0;
+}
+
+
+
+
+//loader
+
+.loader-circle {
+  // #f3f3f3
+  border: 8px solid $secondary-color;
+  border-radius: 50%;
+  border-top: 8px solid $main-color;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,173 @@
+/*----------  user activity  ----------*/
+
+.match-container {
+    margin: auto;
+    text-transform: capitalize;
+}
+.game-box {
+    width: 200px;
+    height: 300px;
+    min-width: 100px;
+    min-height: 110px;
+    border: 1px solid $border-color;  
+    box-shadow: 0px 2px 4px 0px #d9d8d8;
+    border-radius: 2px;
+    margin: rem(10px);
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-family: 'PaytoneOne';
+
+    h3 {
+        color: $main-color;
+    }
+}
+
+.img-activity-container {
+    width: 75%;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    img {
+        width: 85%;
+        align-self: center;
+        align-items: flex-end;
+    }
+}
+.games-box {
+    align-items: center;
+    margin: 20px;
+    padding: 25px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.games-box-container {
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center
+}
+
+.game-boxes {
+    align-items: center;
+    align-self: center;
+}
+
+.games-container {
+    width: 90%;
+    padding: 20px 40px;
+    margin: auto;
+}
+
+.match-container>h3 {
+    margin-bottom: 40px;
+    
+}
+
+.activity-container {
+    justify-content: space-between;
+    // border: 1px solid;
+}
+
+.activity-header {
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+        margin-right: 30px;
+    }
+}
+.router-container-activity {
+    justify-content: space-between;
+}
+
+.activity-btn {
+    margin: 10px;
+}
+
+.msg-box {
+    border: 1px solid $border-color;  
+    box-shadow: 0px 2px 4px 0px #d9d8d8;
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    margin: 20px 0;
+    // background-color: black;
+    background-color: $card-text-color;
+
+    h4 {
+        align-self: center;
+        text-transform: none;
+    }
+    
+}
+
+.user-ask {
+    margin-right: 50px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    // align-items: center;
+}
+
+
+img {
+    max-height: 150px;
+    max-width: 150px;
+    align-self: center;
+    margin: 20px;
+}
+
+.username {
+    margin-bottom: 4px;
+    font-size: 2em;
+}
+
+.noMatchesMsg {
+    font-weight: 600;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+@media only screen and  (max-width: 767px) {
+	.games-box {
+        width: 90%;
+    }
+    .games-box-container {
+        justify-content: center;
+    }
+    .msg-box {
+        // width: 150px;
+        margin: 10px 0;
+    }
+    .game-box {
+        // width: 120px;
+        height: 250px;
+    }
+} 
+
+@media only screen and  (max-width: 540px) {
+    .games-box {
+        width: 90%;
+        margin:  20px auto;
+    }
+    .games-box-container {
+        justify-content: center;
+        margin: auto;
+    }
+    .match-container {
+        justify-content: center;
+    }
+    .games-container {
+        flex-direction: column;
+    }
+    .offers {
+        margin-top: 40px;
+        h2 {
+            margin: auto;
+        }
+    }
+    .user-ask {
+        margin: auto;
+        align-items: center;
+    }
+}
